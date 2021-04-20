@@ -1,0 +1,14 @@
+{
+    "translation_table": {
+        "a": "freq_items[1] subsetEq from_solution_freq_items[1]",
+        "b": "freq_items[2] > from_solution_freq_items[2]"
+    },
+    "resolve_with_bdd": false,
+    "resolution_expression_str": "And(And(Terminal(\"a\"), Not(Terminal(\"b\"))), And(Terminal(\"a_prime\"), Not(Terminal(\"b_prime\"))))",
+    "sat_assignment": {
+        "a_prime": true,
+        "a": true,
+        "b": false,
+        "b_prime": false
+    }
+}

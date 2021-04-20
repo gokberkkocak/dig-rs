@@ -1,0 +1,11 @@
+{
+    "translation_table": {
+        "a": "freq_items[1] subsetEq from_solution_freq_items[1]"
+    },
+    "resolve_with_bdd": false,
+    "resolution_expression_str": "And(Terminal(\"a\"), Terminal(\"a_prime\"))",
+    "sat_assignment": {
+        "a_prime": true,
+        "a": true
+    }
+}

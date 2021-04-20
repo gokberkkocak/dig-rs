@@ -1,0 +1,18 @@
+{
+    "translation_table": {
+        "c": "freq_items[cover_pos] union freq_items[cover_neg] = from_solution_freq_items[cover_pos] union from_solution_freq_items[cover_neg]",
+        "d": "freq_items[itemset] subsetEq from_solution_freq_items[itemset]",
+        "b": "freq_items[cover_neg] supsetEq from_solution_freq_items[cover_neg]",
+        "a": "freq_items[cover_pos] subsetEq from_solution_freq_items[cover_pos]"
+    },
+    "resolve_with_bdd": true,
+    "resolution_expression_str": "Or(Or(Or(And(And(And(And(And(Terminal(\"a\"), Terminal(\"b\")), Not(Terminal(\"c\"))), Terminal(\"a_prime\")), Terminal(\"b_prime\")), Not(Terminal(\"c_prime\"))), And(And(And(And(And(Terminal(\"a\"), Terminal(\"b\")), Not(Terminal(\"c\"))), Terminal(\"a_prime\")), Terminal(\"b_prime\")), Terminal(\"d_prime\"))), And(And(And(And(And(Terminal(\"a\"), Terminal(\"b\")), Terminal(\"d\")), Terminal(\"a_prime\")), Terminal(\"b_prime\")), Not(Terminal(\"c_prime\")))), And(And(And(And(And(Terminal(\"a\"), Terminal(\"b\")), Terminal(\"d\")), Terminal(\"a_prime\")), Terminal(\"b_prime\")), Terminal(\"d_prime\")))",
+    "sat_assignment": {
+        "b": true,
+        "a_prime": true,
+        "b_prime": true,
+        "c_prime": false,
+        "a": true,
+        "c": false
+    }
+}
