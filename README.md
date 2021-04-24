@@ -1,4 +1,4 @@
-# Dominance Incomparability Generator
+# Dominance Incomparability Generator ![build/test](https://github.com/gokberkkocak/dig-rs/actions/workflows/ci.yml/badge.svg)
 
 ## Build
 
