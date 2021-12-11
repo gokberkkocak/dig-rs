@@ -35,7 +35,7 @@ fn main() {
     let mut dom = Dominance::new(expr, translation_table, resolve_with_bdd, produce_graph);
     dom.resolve();
     if let Some(graph) = dom.get_graph_string() {
-        fs::write(format!("{}.dot", output.split(".").next().unwrap()), graph)
+        fs::write(format!("{}.dot", output.split('.').next().unwrap()), graph)
             .expect("Unable to write file");
     }
     let json = serde_json::to_string(&dom).unwrap();

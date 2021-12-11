@@ -40,7 +40,7 @@ impl Parser {
                 _ => (),
             }
         }
-        return stack.is_empty();
+        stack.is_empty()
     }
 
     fn parse_dom_line(&mut self) -> (Expr<String>, HashMap<String, String>) {
